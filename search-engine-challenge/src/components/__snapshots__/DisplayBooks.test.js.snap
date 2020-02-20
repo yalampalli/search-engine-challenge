@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Display books Component should match the snapshot of the book for same input 1`] = `
+<div>
+  <div
+    class="book"
+  >
+    <div
+      class="title"
+      data-testid="book-title"
+    >
+      Title 1
+    </div>
+    <div
+      class="summary"
+      data-testid="book-summary"
+    >
+      Summary 1
+    </div>
+    <h4
+      data-testid="book-author"
+    >
+      <hr />
+      Author 1
+    </h4>
+  </div>
+</div>
+`;

@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  color: #333;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("assets/Lato-Regular.ttf");
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+#autoComplete {
+  height: 40px;
+  width: 250px;
+  border-radius: 6px;
+  border-width: 1px;
+  padding: 10px;
+}
+
+.submitButton {
+  width: 100px;
+  margin: 0 10px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.option {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.autoContainer {
+  box-shadow: 0px 4px 5px 0px darkgrey;
+  width: 245px;
+  align-self: center;
+  position: absolute;
+  top: 40px;
+  border-radius: 0 0 4px 4px;
+  z-index: 1;
+  background-color: white;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.mainContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapperContainer {
+  display: flex;
+  align-items: center;
+}
+
+.book {
+  box-shadow: 0px 1px 8px 0px grey;
+  padding: 0 15px;
+  margin: 5px;
+  border-radius: 7px;
+  position: relative;
+  min-height: 155px;
+}
+
+.bookContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(610px, 1fr));
+  grid-gap: 5px;
+  margin-top: 10px;
+}
+
+.title {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
+  margin: 15px 0;
+}
+
+h4 {
+  color: #b3b0b0;
+  margin: 15px 0;
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  width: calc(100% - 30px);
+}
+
+hr {
+  height: 3px;
+  background-color: gray;
+}
+
+.summary {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #b3b0b0;
+  white-space: nowrap;
+}
+
+.noDataText {
+  color: #b3b0b0;
+  font-weight: bold;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
